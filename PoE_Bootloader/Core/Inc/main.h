@@ -1,30 +1,28 @@
 /* USER CODE BEGIN Header */
-/**
+ /*
  ====================================================================================================
- * File:		main.c
- * Author:		AMS-IOT
- * Version:	    Rev_1.0.0
- * Date:		Dec 05, 2023
- * Brief:		This file contains the boot loader
- *
+ * File:        main.h
+ * Author:      Hamas Saeed
+ * Version:     Rev_1.0.0
+ * Date:        Dec 05, 2023
+ * Brief:       PoE Switch Bootloader main header file.
+ * 
  ====================================================================================================
- * Attention:
- *                         COPYRIGHT 2021 AMS-IOT Pvt Ltd.
- *
- * Licensed under ************* License Agreement V2, (the "License");
- * Third Party may not use this file except in compliance with the License.
- * Third Party may obtain a copy of the License at:
- *
- *
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * License: 
+ * This file is licensed under the GNU Affero General Public License (AGPL) v3.0.
+ * You may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
+ * https://www.gnu.org/licenses/agpl-3.0.en.html
+ * 
+ * Commercial licensing: For commercial use of this software, please contact Hamas Saeed at 
+ * hamasaeed@gmail.com.
+ * 
+ * Distributed under the AGPLv3 License. Software is provided "AS IS," without any warranties 
+ * or conditions of any kind, either express or implied.
  *
  =====================================================================================================
-  */
+ */
+
 /* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -40,12 +38,12 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "save.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-//#define  SERIAL_DEBUG                   // Comment This Out TO Disable Serial Output
+//#define  SERIAL_DEBUG                                                             // Comment This Out TO Disable Serial Output
 
 /* USER CODE END ET */
 
@@ -64,9 +62,15 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
-// For debugging
+/* For Debugging */
 extern uint8_t debugBuff[80];
 void SerialDebug(char * data);
+
+/* Function Prototypes */
+void updateCheck();
+poe_err firmwarePresent();
+poe_err copyFirmware(uint32_t source, uint32_t destination);
+static void jumpToApplication(void);
 
 /* USER CODE END EFP */
 
