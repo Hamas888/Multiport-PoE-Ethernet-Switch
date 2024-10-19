@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Switch Status</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">                                                                  
+        <h1 id="sp">Networking Switch Status</h1>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="switch_status.shtml">Status</a></li>
+				<li><a href="switch_setting.html">Setting</a></li>
+				<li><a href="update.html">Update</a></li>
+				<li><a href="device.html">Device</a></li>
+			</ul>
+		</div>
+        <div class="port" id="port1">
+            <div class="port-info">
+                <h3>Port 1</h3>
+                <div class="parameter">
+                    <label for="speed1">Speed</label>
+                    <div class="status" id="speed1"><!--#l11--></div>
+                </div>
+                <div class="parameter">
+                    <label for="status1">Status</label>
+                    <div class="status" id="status1"><!--#l12--></div>
+                </div>
+				<div class="parameter">
+                    <label for="link1">Link</label>
+                    <div class="status" id="linkStatus1"><!--#l13--></div>
+				</div>
+				<div class="parameter">
+                    <label for="pdc1">PD Class</label>
+                    <div class="status" id="pdc1"><!--#l14--></div>
+				</div>
+				<div class="parameter">
+					<label for="pd1">PD</label>
+					<div class="power-circle" id="powerCircle1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ports" id="port2">
+            <div class="port-info">
+                <h3>Port 2</h3>
+                <div class="parameter">
+                    <div class="status" id="speed2"><!--#l21--></div>
+                </div>
+                <div class="parameter">
+                    <div class="status" id="status2"><!--#l22--></div>
+                </div>
+				<div class="parameter">
+                    <div class="status" id="linkStatus2"><!--#l23--></div>
+				</div>
+				<div class="parameter">
+                    <div class="status" id="pdc2"><!--#l24--></div>
+				</div>
+				<div class="parameter">
+					<div class="power-circle" id="powerCircle2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ports" id="port3">
+            <div class="port-info">
+                <h3>Port 3</h3>
+                <div class="parameter">
+                    <div class="status" id="speed3"><!--#l31--></div>
+                </div>
+                <div class="parameter">
+                    <div class="status" id="status3"><!--#l32--></div>
+                </div>
+				<div class="parameter">
+                    <div class="status" id="linkStatus3"><!--#l33--></div>
+				</div>
+				<div class="parameter">
+                    <div class="status" id="pdc3"><!--#l34--></div>
+				</div>
+				<div class="parameter">
+					<div class="power-circle" id="powerCircle3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ports" id="port4">
+            <div class="port-info">
+                <h3>Port 4</h3>
+                <div class="parameter">
+                    <div class="status" id="speed4"><!--#l41--></div>
+                </div>
+                <div class="parameter">
+                    <div class="status" id="status4"><!--#l42--></div>
+                </div>
+				<div class="parameter">
+                    <div class="status" id="linkStatus4"><!--#l43--></div>
+				</div>
+				<div class="parameter">
+                    <div class="status" id="pdc4"><!--#l44--></div>
+				</div>
+				<div class="parameter">
+					<div class="power-circle" id="powerCircle4"></div>
+				</div>
+			</div>
+		</div>
+		<div class="ports" id="port4">
+            <div class="port-info">
+                <h3>Port 5</h3>
+                <div class="parameter">
+                    <div class="status" id="speed5"><!--#l51--></div>
+                </div>
+                <div class="parameter">
+                    <div class="status" id="status5"><!--#l52--></div>
+                </div>
+				<div class="parameter">
+                    <div class="status" id="linkStatus5"><!--#l53--></div>
+				</div>
+				<div class="parameter">
+                    <div class="status" id="pdc5"><!--#l54--></div>
+				</div>
+				<div class="parameter">
+					<div class="power-circle" id="powerCircle5"></div>
+				</div>
+			</div>
+		</div>
+	
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
