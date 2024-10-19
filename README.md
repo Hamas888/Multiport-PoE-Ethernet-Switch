@@ -1,4 +1,4 @@
-# Multiport PoE Ethernet Switch with Custom Signaling
+# Multiport PoE Switch with Custom Signaling
 
 ![Project Image](https://drive.google.com/uc?export=view&id=1J4BJ_7U2pBXm5Z4PWR-nIi7LH-2YpAVN) 
 
