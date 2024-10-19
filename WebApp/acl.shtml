@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Control List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container2">
+		<h1 id="up">Access Control List</h1>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="switch_setting.html">Setting</a></li>
+				<li><a href="acl.shtml">ACL</a></li>
+				<li><a href="vlan.html">VLAN</a></li>
+			</ul>		
+		</div>
+		<div class="port" id="aclTable">
+			<div class="port-select">
+				<div class="parameter">
+					<label for="portNumber">Port</label>
+					<select id="portNumber">
+						<option value="1">Port 1</option>
+						<option value="2">Port 2</option>
+						<option value="3">Port 3</option>
+						<option value="4">Port 4</option>
+						<option value="5">Port 5</option>
+						<option value="6">Port 6</option>
+					</select>
+				</div>
+				<div class="parameter">
+					<label for="aclmode">Authentication Mode</label>
+					<select id="aclmode">
+						<option value="1">Pass Mode</option>
+						<option value="2">Block Mode</option>
+					</select>				
+				</div>
+				<div class="parameter">	
+					<label for="toggleCheckbox">ACL Service</label>
+					<label class="toggle-switch" for="toggleCheckbox">
+						<input type="checkbox" id="toggleCheckbox" value="0" onchange="toggleValue(this)" style="display: none;">
+						<span class="toggle-slider"></span>
+					</label>				
+				</div>
+			</div>
+			<div class="port-entry">
+				<h4>Entry 1</h4>
+				<div class="parameter">
+					<label for="mode1">Mode</label>
+					<select id="mode1" onchange="toggleVisibility(mode1, c1, sd1, p1, a1), toggleVisibility(mode1, compare1, t1, ipm1)">
+						<option value="0">Disable</option>
+						<option value="1">MAC/EtherType</option>
+						<option value="2">IP</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "c1" style="display: none;">
+					<label for="compare1">Compare</label>
+					<select id="compare1" onchange="toggleVisibility(mode1, compare1, t1, ipm1)">
+						<option value="1" data-mode="mac">MAC</option>
+						<option value="2" data-mode="mac">Type</option>
+						<option value="3" data-mode="mac">MAC & Type</option>
+						<option value="10" data-mode="ipv4">IPV4 With Mask</option>
+						<option value="20" data-mode="ipv4">IPV4 No Mask</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "sd1" style="display: none;">
+					<label for="s/d1">S/D</label>
+					<select id="s/d1">
+						<option value="0">Destination</option>
+						<option value="1">Source</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "p1" style="display: none;">
+					<label for="permission1">Permission</label>
+					<select id="permission1">
+						<option value="0">Deny</option>
+						<option value="1">Permit</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "a1" style="display: none;">
+					<label for="address1">Mac Address</label>
+					<input id="address1" type="text" maxlength="17">				
+				</div>
+				<div class="parameter" id = "ipm1" style="display: none;">
+					<label for="mask1">IP Mask</label>
+					<input id="mask1" type="text" maxlength="15">				
+				</div>
+				<div class="parameter" id = "t1" style="display: none;">
+					<label for="type1">Type</label>
+					<select id="type1">
+						<option value="0x0800">IPv4</option>
+						<option value="0x0806">ARP</option>
+						<option value="0x22F0">AVTP</option>
+						<option value="0x809B">EtherTalk</option>
+						<option value="0x80F3">AARP</option>
+						<option value="0x8035">RARP</option>
+					</select>				
+				</div>
+			</div>
+			<div class="port-entry">
+				<h4>Entry 2</h4>
+				<div class="parameter">
+					<label for="mode2">Mode</label>
+					<select id="mode2" onchange="toggleVisibility(mode2, c2, sd2, p2, a2), toggleVisibility(mode2, compare2, t2, ipm2)">
+						<option value="0">Disable</option>
+						<option value="1">MAC/EtherType</option>
+						<option value="2">IP</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "c2" style="display: none;">
+					<label for="compare2">Compare</label>
+					<select id="compare2" onchange="toggleVisibility(mode2, compare2, t2, ipm2)">
+						<option value="1" data-mode="mac">MAC</option>
+						<option value="2" data-mode="mac">Type</option>
+						<option value="3" data-mode="mac">MAC & Type</option>
+						<option value="10" data-mode="ipv4">IPV4 With Mask</option>
+						<option value="20" data-mode="ipv4">IPV4 No Mask</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "sd2" style="display: none;">
+					<label for="s/d2">S/D</label>
+					<select id="s/d2">
+						<option value="0">Destination</option>
+						<option value="1">Source</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "p2" style="display: none;">
+					<label for="permission2">Permission</label>
+					<select id="permission2">
+						<option value="0">Deny</option>
+						<option value="1">Permit</option>
+					</select>				
+				</div>
+				<div class="parameter" id = "a2" style="display: none;">
+					<label for="address2">Mac Address</label>
+					<input id="address2" type="text" maxlength="17">				
+				</div>
+				<div class="parameter" id = "ipm2" style="display: none;">
+					<label for="mask2">IP Mask</label>
+					<input id="mask2" type="text" maxlength="15">				
+				</div>
+				<div class="parameter" id = "t2" style="display: none;">
+					<label for="type2">Type</label>
+					<select id="type2">
+						<option value="0x0800">IPv4</option>
+						<option value="0x0806">ARP</option>
+						<option value="0x22F0">AVTP</option>
+						<option value="0x809B">EtherTalk</option>
+						<option value="0x80F3">AARP</option>
+						<option value="0x8035">RARP</option>
+					</select>				
+				</div>
+			</div>
+		</div>
+		<button id="submitChanges">Submit</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

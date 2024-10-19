@@ -1,0 +1,7 @@
+../Core/Src/save.c:36:9:writeSettingsToFlash	5
+../Core/Src/save.c:72:6:readSettingsFromFlash	1
+../Core/Src/save.c:84:9:eraseFlashSector	3
+../Core/Src/save.c:120:9:writeFlash	4
+../Core/Src/save.c:157:6:readFlash	2
+../Core/Src/save.c:177:9:writeACLSheetToFlash	5
+../Core/Src/save.c:213:6:readACLSheetToFlash	1

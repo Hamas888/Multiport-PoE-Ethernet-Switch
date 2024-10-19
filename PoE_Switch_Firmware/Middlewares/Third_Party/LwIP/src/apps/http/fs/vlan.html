@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="up">VLAN</h1>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="switch_setting.html">Setting</a></li>
+				<li><a href="acl.shtml">ACL</a></li>
+				<li><a href="vlan.html">VLAN</a></li>
+			</ul>		
+		</div>
+		<div class="port" id="vlan">
+			<div class="port-select">
+				<div class="parameter">
+					<label for="portNumber">Port</label>
+					<select id="portNumber">
+						<option value="1">Port 1</option>
+						<option value="2">Port 2</option>
+						<option value="3">Port 3</option>
+						<option value="4">Port 4</option>
+						<option value="5">Port 5</option>
+						<option value="6">Port 6</option>
+					</select>
+				</div>
+				<div class="parameter">	
+					<label for="toggleCheckbox">VLAN Service</label>
+					<label class="toggle-switch" for="toggleCheckbox">
+						<input type="checkbox" id="toggleCheckbox" value="0" onchange="toggleValue(this)" style="display: none;">
+						<span class="toggle-slider"></span>
+					</label>				
+				</div>
+			</div>
+			<div class="port-entry">
+				<h4>VLAN</h4>
+				<div class="parameter">
+					<label for="p1">Port 1</label>
+					<select id="p1">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+				<div class="parameter">
+					<label for="p2">Port 2</label>
+					<select id="p2">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+				<div class="parameter">
+					<label for="p3">Port 3</label>
+					<select id="p3">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+				<div class="parameter">
+					<label for="p4">Port 4</label>
+					<select id="p4">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+				<div class="parameter">
+					<label for="p5">Port 5</label>
+					<select id="p5">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+				<div class="parameter">
+					<label for="p6">Port 6</label>
+					<select id="p6">
+						<option value="0">Disable</option>
+						<option value="1">Enable</option>
+					</select>				
+				</div>
+			</div>	
+		</div>
+		
+        <button id="setButton">Set</button>
+    </div>
+	<script src="script.js"></script>
+</body>
+
+</html>
