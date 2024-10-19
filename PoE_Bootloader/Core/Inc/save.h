@@ -38,17 +38,17 @@
 typedef struct __attribute__((packed, aligned(4))) {
 
     char speed[5][11];                      // Port Speeds
-    char status[5][11];				        // Port Status
-    char pdconfig[5][11];			        // Port Power Class
-    char pdenable[5][11];			        // Port Power Enable
+    char status[5][11];                     // Port Status
+    char pdconfig[5][11];                   // Port Power Class
+    char pdenable[5][11];                   // Port Power Enable
     int  portACL[6][2];                     // Port ACl Mode & Service
-    char username[10];				        // Device Login User Name
-    char password[10];				        // Device Login Password
-    char def[10];					        // Device Setting Status Flag
-    char boot[10];					        // Device Boot Status
-    char fV[10];					        // Device Firmware Version
-    char update[10];				        // Device Update Status Flag
-    int  size;						        // Device Firmware Size
+    char username[10];                      // Device Login User Name
+    char password[10];                      // Device Login Password
+    char def[10];                           // Device Setting Status Flag
+    char boot[10];                          // Device Boot Status
+    char fV[10];                            // Device Firmware Version
+    char update[10];                        // Device Update Status Flag
+    int  size;                              // Device Firmware Size
 
 } DeviceSettings;
 
