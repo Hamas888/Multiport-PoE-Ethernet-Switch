@@ -57,7 +57,7 @@ typedef enum {
 	POE_ERR = 1,                            // Fail Error
 	POE_WR  = 2,                            // Fail Wrong Input
 	POE_UN  = 3,                            // Fail Unknown
-	POE_RER = 255                           // Fail To Read Register
+	POE_RER = 255                           // Fail To Read Register 
 
 }poe_err;
 
