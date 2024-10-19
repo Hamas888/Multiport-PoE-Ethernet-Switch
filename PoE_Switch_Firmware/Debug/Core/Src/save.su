@@ -1,7 +1,0 @@
-../Core/Src/save.c:36:9:writeSettingsToFlash	40	static
-../Core/Src/save.c:72:6:readSettingsFromFlash	16	static
-../Core/Src/save.c:84:9:eraseFlashSector	56	static
-../Core/Src/save.c:120:9:writeFlash	48	static
-../Core/Src/save.c:157:6:readFlash	32	static
-../Core/Src/save.c:177:9:writeACLSheetToFlash	48	static
-../Core/Src/save.c:213:6:readACLSheetToFlash	16	static

@@ -1,8 +1,0 @@
-../Core/Src/main.c:95:5:main	1
-../Core/Src/main.c:149:6:SystemClock_Config	3
-../Core/Src/main.c:230:13:MX_GPIO_Init	1
-../Core/Src/main.c:273:6:updateCheck	15
-../Core/Src/main.c:393:9:firmwarePresent	4
-../Core/Src/main.c:424:9:copyFirmware	3
-../Core/Src/main.c:456:13:jumpToApplication	1
-../Core/Src/main.c:481:6:Error_Handler	1
