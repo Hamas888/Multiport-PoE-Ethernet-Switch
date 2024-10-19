@@ -1,9 +1,9 @@
 # Multiport PoE Switch with Custom Signaling
 
-![Project Image](https://drive.google.com/file/d/1J4BJ_7U2pBXm5Z4PWR-nIi7LH-2YpAVN) 
+![Project Image](https://drive.google.com/uc?export=view&id=1J4BJ_7U2pBXm5Z4PWR-nIi7LH-2YpAVN) 
 
 ## Overview
-This project is a high-performance, multi-port Power over Ethernet (PoE) switch capable of delivering IEEE 802.3bt/at PoE to up to 4 Powered Devices (PDs). Built around the STM32F4 MCU, KSZ9897 Ethernet switch, and TPS23881 PoE controller, this project delivers robust performance for embedded network applications.
+This project is a high-performance, multi-port Power over Ethernet (PoE) switch capable of delivering IEEE 802.3bt/at PoE to up to 4 Powered Devices (PDs). Built around the STM32F4 MCU, KSZ9897 Ethernet switch, and TPS23881 PoE controller, it delivers robust performance for embedded network applications.
 
 The device offers:
 - **6 Ethernet ports**: 4 with 802.3bt/at PoE, 1 power input port (PoE PD), and 1 for standard Ethernet communication.
@@ -48,7 +48,7 @@ The firmware includes:
 
 1. **Hardware**:
    - [Schematic](path-to-schematic.pdf)
-   - [PCB Layout](path-to-pcb-layout.pdf)
+   - [PCB Layout](path-to-PCB-layout.pdf)
    - [Bill of Materials (BOM)](path-to-bom.csv)
    - [Enclosure Design](path-to-enclosure-design.pdf)
 
