@@ -8,10 +8,6 @@
 3. **[Hardware Design](#hardware-design)**  
    - [Key Components](#key-components)  
 4. **[Firmware](#firmware)**  
-   - [PoE Power Management](#poe-power-management)  
-   - [Custom Traffic Management](#custom-traffic-management)  
-   - [Fault Protection](#fault-protection)  
-   - [Firmware Update via Ethernet](#firmware-update-via-ethernet)    
 5. **[Future Work](#future-work)**  
 6. **[Licensing](#licensing)**
 
